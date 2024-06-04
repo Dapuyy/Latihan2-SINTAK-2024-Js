@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan Mandiri2 SINTAK2024</title>
+  <script>
+    window.onload = function() {
+      alert('SELAMAT DATANG DI INDOMART SELAMAT BERBELANJA');
+    }
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h1>Latihan Mandiri 2</h1>
+    <button class="btn btn-primary" id="alert" onclick="tampil_alert()">Ada Ga</button>
+    <button class="btn btn-primary" id="confirm" onclick="tampil_confirm()">Pilihan Hidup</button>
+    <button class="btn btn-primary" id="prompt" onclick="tampil_prompt()">Prompt Night hehe</button>
+    <h2 id="namaOutput" class="mt-4"></h2>
+  </div>
+  
+  <script>
+      // Function Alert
+      function tampil_alert(){
+          alert('Ada ya CINTA KYUU ><');
+      }
+
+      // Function Confirm
+      function tampil_confirm(){
+          confirm('Mau Ga jadi PACAR AKYUUUU ><');
+      }
+
+      // Function Prompt
+      function tampil_prompt(){
+          var nama = prompt('Coba Isi dengan Nama Kamu dong Sayang ><');
+          if (nama) {
+              document.getElementById('namaOutput').textContent = 'Nama kamu : ' + nama;
+          } else {
+              document.getElementById('namaOutput').textContent = 'IIIII KAMU JAHAT YAA GA NGISI!!!';
+          }
+      }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
